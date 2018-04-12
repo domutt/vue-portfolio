@@ -45,6 +45,7 @@ export default Vue.extend({
 <style scoped lang="scss">
 h3 {
   margin: 40px 0 0;
+  font-weight: 400;
 }
 ul {
   list-style-type: none;
