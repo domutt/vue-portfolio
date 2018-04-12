@@ -19,5 +19,5 @@ yarn-error.log*
 *.njsproj
 *.sln
 
-# Images
+# Ignore assets
 assets/
