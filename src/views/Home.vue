@@ -16,3 +16,9 @@ export default Vue.extend({
   },
 });
 </script>
+<style scoped lang="scss">
+.home{
+  padding-top: 80px;
+}
+
+</style>
