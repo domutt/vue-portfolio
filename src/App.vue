@@ -35,7 +35,10 @@ body {
     background-color: #daf0e6;
     // cursor: url('./assets/dual-ring.apng'), auto;
 }
-.url {cursor: url('./assets/cursor.png'),auto;}
+.url {
+    cursor: url('./assets/cursor.png'),auto;
+}
+
 #app {
     font-family: 'Work Sans', Helvetica, Arial, sans-serif;
     font-weight: 100;
