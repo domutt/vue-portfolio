@@ -1,8 +1,8 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2 v-if="!showList" @click="showList === true" >Looping through data:</h2>
-    <h2 v-else @click="showList === true" >Looping through data:</h2>
+    <h2>A. Looping through data:</h2>
+    <h2>B. Looping through data:</h2>
     <div class="techs">
       <div v-for="tech in techs" :key="tech.id" :tech="tech">
         <img class="tech-logo" v-bind:src="tech.logo"/>
@@ -28,10 +28,7 @@ export default Vue.extend({
   },
   data() {
     return {
-<<<<<<< HEAD
       showList: false,
-=======
->>>>>>> dcf20b041b62753bb56ed814b779a9e5f5a3e1c5
       techs: [
         {
           "key": "gulp",
