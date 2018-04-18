@@ -89,7 +89,5 @@ body {
     }
   }
 }
-router-view{
-  margin: 0 1rem;
-}
+
 </style>
