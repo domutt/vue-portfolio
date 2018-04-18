@@ -2,7 +2,6 @@
   <div class="about">
     <div id="profile-container">
       <div id="profile-pic">
-
       </div>
     </div>
     <div id="about-me">
