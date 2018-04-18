@@ -19,6 +19,4 @@ export default Vue.extend({
 .home{
   margin: 0 1rem;
 }
-
-
 </style>

@@ -19,6 +19,8 @@
 <script lang="ts">
 import Vue from 'vue';
 
+
+
 export default Vue.extend({
   name: 'HelloWorld',
   props: {
@@ -26,7 +28,10 @@ export default Vue.extend({
   },
   data() {
     return {
+<<<<<<< HEAD
       showList: false,
+=======
+>>>>>>> dcf20b041b62753bb56ed814b779a9e5f5a3e1c5
       techs: [
         {
           "key": "gulp",
