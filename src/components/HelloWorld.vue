@@ -1,32 +1,18 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <p>
-      For guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://github.com/vuejs/vue-cli/tree/dev/docs" target="_blank">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-typescript" target="_blank">typescript</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa" target="_blank">pwa</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org/en/essentials/getting-started.html" target="_blank">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org/en/intro.html" target="_blank">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org/en" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+    <h2 v-if="!showList" @click="showList === true" >Looping through data:</h2>
+    <h2 v-else @click="showList === true" >Looping through data:</h2>
+    <div class="techs">
+      <div v-for="tech in techs" :key="tech.id" :tech="tech">
+        <img class="tech-logo" v-bind:src="tech.logo"/>
+        <h3 class="tech-h3">
+          {{ tech.title }}
+        </h3>
+        <p>{{ tech.text1 }}</p>
+        <p>{{ tech.text2 }}</p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -38,10 +24,74 @@ export default Vue.extend({
   props: {
     msg: String,
   },
+  data() {
+    return {
+      showList: false,
+      techs: [
+        {
+          "key": "gulp",
+          "title": "Gulp",
+          "logo": "http://fountainjs.io/assets/imgs/gulp.png",
+          "text1": "The streaming build system",
+          "text2": "Automate and enhance your workflow"
+        },
+        {
+          "key": "vue",
+          "title": "Vue.js 2",
+          "logo": "http://fountainjs.io/assets/imgs/vue.png",
+          "text1": "Reactive Components for Modern Web Interfaces",
+          "text2": "Write some HTML, grab some JSON, create a Vue instance, that's it."
+        },
+        {
+          "key": "browsersync",
+          "title": "Browsersync",
+          "logo": "http://fountainjs.io/assets/imgs/browsersync.png",
+          "text1": "Time-saving synchronised browser testing",
+          "text2": "It’s wicked-fast and totally free"
+        },
+        {
+          "key": "scss",
+          "title": "Sass",
+          "logo": "http://fountainjs.io/assets/imgs/sass.png",
+          "text1": "Syntactically Awesome Style Sheets.",
+          "text2": "CSS with superpowers."
+        },
+        {
+          "key": "babel",
+          "title": "Babel",
+          "logo": "http://fountainjs.io/assets/imgs/babel.png",
+          "text1": "Babel is a JavaScript compiler",
+          "text2": "Use next generation JavaScript, today"
+        },
+        {
+          "key": "eslint",
+          "title": "ESLint",
+          "logo": "http://fountainjs.io/assets/imgs/eslint.png",
+          "text1": "The pluggable linting utility for JavaScript and JSX.",
+          "text2": "1 tool for identifying and reporting on patterns found in ECMAScript/JavaScript code."
+        },
+        {
+          "key": "karma",
+          "title": "Karma",
+          "logo": "http://fountainjs.io/assets/imgs/karma.png",
+          "text1": "Spectacular Test Runner for JavaScript",
+          "text2": "Things should be simple. We believe in testing and so we want to make it as simple as possible"
+        },
+        {
+          "key": "webpack",
+          "title": "Webpack",
+          "logo": "http://fountainjs.io/assets/imgs/webpack.png",
+          "text1": "Webpack is a module bundler",
+          "text2": "Webpack, the production / unbiased / flexible / extensible / open source module bundler"
+        }
+      ]
+    };
+  }
 });
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped lang="scss">
 h3 {
   margin: 40px 0 0;
