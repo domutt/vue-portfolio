@@ -3,8 +3,6 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 import './registerServiceWorker';
-require('../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss')
-
 
 Vue.config.productionTip = false;
 

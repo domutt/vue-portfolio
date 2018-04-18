@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <img src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <HelloWorld msg="UX/UI design, graphic design + front end web development - overall creator of things ♥"/>
   </div>
 </template>
 
@@ -12,13 +11,14 @@ import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 export default Vue.extend({
   name: 'home',
   components: {
-    HelloWorld,
+    HelloWorld
   },
 });
 </script>
 <style scoped lang="scss">
 .home{
-  padding-top: 80px;
+  margin: 0 1rem;
 }
+
 
 </style>

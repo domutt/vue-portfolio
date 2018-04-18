@@ -1,30 +1,48 @@
 <template>
-    <div class="row">
-        <div class="col-sm align-self-start">
-            <img src="../assets/projects/logo/r12-logo-main.png" alt="">
-            <!-- One of three columns -->
-        </div>
-        <div class="col-sm align-self-center">
-            <img src="../assets/projects/logo/r12-goods.png" alt="">
-        </div>
-        <div class="col-sm align-self-end">
-            <img src="../assets/projects/logo/r12-book.png" alt="">
-        </div>
+  <div class="about">
+    <div id="profile-container">
+      <div id="profile-pic">
 
+      </div>
     </div>
-  <!-- <div class="about">
-    <h1>This is an about page</h1>
-  </div> -->
+    <div id="about-me">
+      <h2>
+        UI Designer and half-stack dev with experience in visual art, branding, and graphic design. My interests rest in finding creative solutions that activate the user experience through beautiful interfaces.
+      </h2>
+    </div>
+    <div id="technology">
+      <h3>
+        TECH
+      </h3>
+      <div class="talents">
+        HTML/CSS/JS, JS Frameworks, Adobe CS, Sketch, Zeplin, Confluence/Jira, Trello
+      </div>
+    </div>
+    <div id="skills">
+      <h3>
+        SKILLS
+      </h3>
+      <div class="talents">
+        Print/Digital, Web/Mobile, Grid/Layout, Typography, Color Theory, Wire-framing, Prototyping, UX/UI, Branding, Identity, Creative Solutions
+      </div>
+    </div>
+    <div>
+      connect
+    </div>
+    <div id="connect">
+      <span class="get-at-me">
+        <a href="https://www.linkedin.com/in/domuttel" target="_blank">Linkedin</a>
+      </span>
+      <span> or </span>
+      <span class="get-at-me">
+        <a href="mailto:domuttel@gmail.com">Email Me :)</a>
+      </span>
+    </div>
+  </div>
 </template>
 
 <style scoped lang="scss">
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
-.row{
-  margin: 0;
-  padding-top: 80px;
-}
-img{
-    width: 100%;
-    height: auto;
+.about{
+  margin: 0 1rem;
 }
 </style>
