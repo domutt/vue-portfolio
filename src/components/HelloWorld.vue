@@ -1,9 +1,13 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>A. Looping through data:</h2>
-    <h2>B. Looping through data:</h2>
-    <div class="techs">
+    <div class="headline">
+      <h1>{{ msg }}</h1>
+    </div>
+
+
+    <!-- <h2>A. Looping through data:</h2>
+    <h2>B. Looping through data:</h2> -->
+    <!-- <div class="techs">
       <div v-for="tech in techs" :key="tech.id" :tech="tech">
         <img class="tech-logo" v-bind:src="tech.logo"/>
         <h3 class="tech-h3">
@@ -12,7 +16,7 @@
         <p>{{ tech.text1 }}</p>
         <p>{{ tech.text2 }}</p>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -95,8 +99,21 @@ export default Vue.extend({
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
 <style scoped lang="scss">
+.hello{
+  width: 100%;
+  .headline{
+    width:60%;
+    margin: 0 auto;
+  }
+}
+h1{
+  font-weight: 900;
+  font-size: 5rem;
+  letter-spacing: .5rem;
+  color: white;
+}
 h3 {
-  margin: 40px 0 0;
+  // margin: 40px 0 0;
   font-weight: 400;
 }
 ul {

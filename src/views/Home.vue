@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <HelloWorld msg="UX/UI design, graphic design + front end web development - overall creator of things ♥"/>
+    <HelloWorld msg="UX/UI design, graphic design + front end web - overall creator of things ♥"/>
   </div>
 </template>
 
@@ -17,6 +17,6 @@ export default Vue.extend({
 </script>
 <style scoped lang="scss">
 .home{
-  margin: 0 1rem;
+  margin-top: 8rem;
 }
 </style>

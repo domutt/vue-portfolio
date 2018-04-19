@@ -2,12 +2,12 @@
   <div id="app">
 
     <div id="nav-bar">
-      <div id="name-holder">
-        <div id="name-art"></div>
+      <div id="my-name">
+        <router-link to="/"> DOMINIC MUTTEL </router-link>
       </div>
       <div id="nav-pages">
-        <router-link to="/">Home </router-link>
-        <router-link to="/about"> About</router-link>
+        <router-link to="/work">Work</router-link>
+        <router-link to="/about">About</router-link>
       </div>
     </div>
 
@@ -21,29 +21,84 @@
 </template>
 
 <style lang="scss">
+$font-dir: "./assets/fonts/";
+
+@font-face {
+  font-family: "Monique";
+  src: url("#{$font-dir}Monique-RegularRound20.woff2") format("woff2"),
+	url("#{$font-dir}Monique-RegularRound20.woff") format("woff"),
+	url("#{$font-dir}Monique-RegularRound20.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("#{$font-dir}WorkSans-Thin.woff2") format("woff2"),
+	url("#{$font-dir}WorkSans-Thin.woff") format("woff"),
+	url("#{$font-dir}WorkSans-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("#{$font-dir}WorkSans-Regular.woff2") format("woff2"),
+  url("#{$font-dir}WorkSans-Regular.woff") format("woff"),
+  url("#{$font-dir}WorkSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("#{$font-dir}WorkSans-Medium.woff2") format("woff2"),
+	url("#{$font-dir}WorkSans-Medium.woff") format("woff"),
+	url("#{$font-dir}WorkSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("#{$font-dir}WorkSans-Black.woff2") format("woff2"),
+	url("#{$font-dir}WorkSans-Black.woff") format("woff"),
+	url("#{$font-dir}WorkSans-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
 
 body {
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
-  background-color: #daf0e6;
+  background-color: #AAA9B7;
   font-size: 1.2rem;
+}
+
+h2{
+  font-weight: 600;
+}
+h3{
+  font-weight: normal;
 }
 #app {
   font-family: 'Work Sans', Helvetica, Arial, sans-serif;
-  font-weight: 100;
+  font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  color: #0A0624;
 }
 .logo{
-  width: 30%;
   position: fixed;
-  height:400px;
+  width: 100%;
+  height: 400px;
   top: 14rem;
-  left: 1%;
   z-index: -5000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   #my-logo {
     background-image: url('./assets/logo_domu.png');
     background-repeat: no-repeat;
@@ -56,36 +111,41 @@ body {
   }
 }
 #nav-bar{
-  background-color: white;
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  #name-holder{
-    width: 400px;
-    margin-left: 1rem;
-    #name-art{
-      background-image: url("./assets/name.png");
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: center;
-      width: 80%;
-      height: 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  color: black;
+  text-align: center;
+  height: 100px;
+  #my-name{
+    width: 100%;
+    font-family: 'Monique';
+    font-size: 2.5rem;
+    text-decoration: none;
+    margin: 0 auto;
+    a {
+      margin: .5rem;
+      padding: .2rem;
+      text-decoration: none;
+      font-weight: 400;
+      color: black;
     }
+
   }
   #nav-pages {
-    min-width: 110px;
-    margin-right: 1rem;
-
+    font-size: 1rem;
+    width: 100%;
     a {
+      margin: .2rem;
+      padding: .1rem .4rem ;
       text-decoration: none;
-      font-weight: bold;
-      color: #2c3e50;
+      font-weight: 400;
+      color: black;
       &:hover{
-        color:grey
+        background-color: rgba(255,255,255, .2);
       }
       &.router-link-exact-active {
-        color: #42b983;
+        color: #FAF800;
       }
     }
   }
