@@ -7,7 +7,7 @@
     <div id="about-me">
       <h2>
         <span>
-          UI Designer and half-stack dev with experience in visual art, branding, and graphic design. My interests rest in finding creative solutions that activate the user experience through beautiful interfaces.
+          Designer and half-stack dev with experience in visual art, branding, and graphic design. My interests rest in finding creative solutions that activate the user experience through beautiful interfaces.
 
         </span>
       </h2>
@@ -40,13 +40,13 @@
     </div>
     <div id="connect">
       <div class="get-at-me">
-        connect
+     •    - connect -    •
       </div>
       <div class="get-at-me">
         <span >
           <a href="https://www.linkedin.com/in/domuttel" target="_blank">Linkedin</a>
         </span>
-        <span class="or"> or </span>
+        <span class="or"> - • or • - </span>
         <span class="get-at-me">
           <a href="mailto:domuttel@gmail.com">Email Me :)</a>
         </span>
@@ -57,9 +57,15 @@
 </template>
 
 <style scoped lang="scss">
+$darkest-color: black;
+$dark-color: #0A0624;
+$bright-color: #FAF800;
+$light-color: #AAA9B7;
+$lightest-color: white;
+$light-transparency: rgba(255,255,255, .2);
 .about{
   text-align: center;
-  margin-top: 80px;
+  margin-top: 120px;
 }
 #profile-container{
   display: flex;
@@ -71,6 +77,8 @@
   #profile-pic{
     padding:0;
     // margin: 110px;
+    border: 4px solid $bright-color;
+    border-radius:100%;
     width: 220px;
     height: 220px;
     background-position: center;
@@ -95,9 +103,9 @@
       padding: 0;
       margin: 0;
       line-height: 2.5rem;
-      color: white;
+      color: $lightest-color;
       letter-spacing: .25rem;
-      background-color:#0A0624;;
+      background-color:$dark-color;
     }
   }
 }
@@ -111,7 +119,7 @@
     margin-top: 3rem;
     span{
       // margin-bottom: -9rem;
-      background-color: white;
+      background-color: $lightest-color;
       padding: .5rem 1rem 2rem 1rem;
     }
   }
@@ -119,7 +127,7 @@
     font-weight: 600;
     span{
 
-      background-color: white;
+      background-color: $lightest-color;
     }
     // text-decoration: none;
 
@@ -128,11 +136,12 @@
 
 #connect{
   margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 .or{
   font-style: italic;
-  font-size: 1rem;
-  color: yellow;
+  font-size: 1.1rem;
+  color: $bright-color;
   margin: 0 2rem;
   // margin-bottom: 10rem;
 }
@@ -144,10 +153,12 @@
   a {
     text-decoration: none;
     font-weight: 400;
-    color: black;
+    color: $darkest-color;
+    // transition: all .3s;
     &:hover{
-      color: yellow;
-      border-bottom: 2px solid yellow;
+      // transition: all .3s;
+      color: $bright-color;
+      border-bottom: 2px solid $bright-color;
       // text-decoration: line-through;
       // color:white;
       // background-color: rgba(255,255,255, .2);

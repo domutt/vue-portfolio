@@ -21,6 +21,14 @@
 </template>
 
 <style lang="scss">
+
+$darkest-color: black;
+$dark-color: #0A0624;
+$bright-color: #FAF800;
+$light-color: #AAA9B7;
+$lightest-color: white;
+$light-transparency: rgba(255,255,255, .2);
+
 $font-dir: "./assets/fonts/";
 
 @font-face {
@@ -73,7 +81,7 @@ body {
   height: auto;
   margin: 0;
   padding: 0;
-  background-color: #AAA9B7;
+  background-color: $light-color;
   font-size: 1.2rem;
 }
 
@@ -88,7 +96,7 @@ h3{
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #0A0624;
+  color: $dark-color;
 }
 .logo{
   position: fixed;
@@ -114,7 +122,7 @@ h3{
   position: fixed;
   width: 100%;
   top: 0;
-  color: black;
+  color: $darkest-color;
   text-align: center;
   height: 100px;
   #my-name{
@@ -128,7 +136,7 @@ h3{
       padding: .2rem;
       text-decoration: none;
       font-weight: 400;
-      color: black;
+      color: $darkest-color;
     }
 
   }
@@ -140,12 +148,12 @@ h3{
       padding: .1rem .4rem ;
       text-decoration: none;
       font-weight: 400;
-      color: black;
+      color: $darkest-color;
       &:hover{
-        background-color: rgba(255,255,255, .2);
+        background-color: $light-transparency;
       }
       &.router-link-exact-active {
-        color: #FAF800;
+        color: $bright-color;
       }
     }
   }
