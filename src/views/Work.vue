@@ -3,10 +3,7 @@
     <div class="ui-design stylings">
       <div id="ui-design-inner">
         <span @click="showUiProjects">UI Design  </span>
-
         <component :is="uiView"/>
-
-        <!-- <component id="ui-projects" v-bind:is="component1"></component> -->
       </div>
     </div>
     <div class="g-design stylings">
@@ -22,48 +19,42 @@ import Vue from 'vue';
 import GraphicDesign from '@/components/GraphicDesign.vue';
 import UiDesign from '@/components/UiDesign.vue';
 import Blank from '@/components/Blank.vue'; // @ is an alias to /src
+
 export default Vue.extend({
-name: 'work',
-components: {
-  'graphic-design': GraphicDesign,
-  'ui-design': UiDesign,
-  'blank': Blank
-},
-data(){
-  return {
-    uiView: Blank,
-    gdView: Blank
+  name: 'work',
+  components: {
+    'graphic-design': GraphicDesign,
+    'ui-design': UiDesign,
+    'blank': Blank,
+  },
+  data() {
+    return {
+      uiView: Blank,
+      gdView: Blank,
 
-  }
-
-},
-methods : {
-  showUiProjects() {
-    if (this.uiView  === Blank ) {
-      this.uiView = UiDesign
-
-    }
-    // else if(this.uiView ==== Blank && this.gdView === GraphicDesign ){
-    //   this.uiView = UiDesign,
-    //   this.gdView = Blank
-    // }
-    else {
-      this.uiView = Blank
-    }
+    };
 
   },
+  methods : {
+    showUiProjects() {
+      if (this.uiView  === Blank ) {
+        this.uiView = UiDesign;
 
-  showGdProjects() {
-    if (this.gdView  === Blank ) {
-      this.gdView = GraphicDesign
+      } else {
+        this.uiView = Blank;
+      }
 
-    }
-    else {
-    this.gdView = Blank
-  }
+    },
 
-}
-}
+    showGdProjects() {
+      if (this.gdView  === Blank ) {
+        this.gdView = GraphicDesign;
+
+      } else {
+        this.gdView = Blank;
+      }
+    },
+  },
 });
 </script>
 <style scoped lang="scss">
@@ -87,14 +78,11 @@ $light-transparency: rgba(255,255,255, .2);
         padding: 1rem 3rem;
         color: $light-color;
         background-color: $bright-color;
-        // mix-blend-mode: multiply;
       }
       &.router-link-exact-active {
         color: $dark-color;
       }
-
     }
   }
 }
-
 </style>

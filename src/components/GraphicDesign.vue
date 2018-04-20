@@ -22,28 +22,28 @@ import Vue from 'vue';
 export default Vue.extend({
   name: 'GraphicDesign',
   props: {
-    msg: String
+    msg: String,
   },
   data() {
     return {
       techs: [
         {
-          "key": "gulp",
-          "title": "Gulp",
-          "logo": "http://fountainjs.io/assets/imgs/gulp.png",
-          "text1": "The streaming build system",
-          "text2": "Automate and enhance your workflow"
+          key: 'gulp',
+          title: 'Gulp',
+          logo: 'http://fountainjs.io/assets/imgs/gulp.png',
+          text1: 'The streaming build system',
+          text2: 'Automate and enhance your workflow',
         },
         {
-          "key": "vue",
-          "title": "Vue.js 2",
-          "logo": "http://fountainjs.io/assets/imgs/vue.png",
-          "text1": "Reactive Components for Modern Web Interfaces",
-          "text2": "Write some HTML, grab some JSON, create a Vue instance, that's it."
-        }
-      ]
+          key: 'vue',
+          title: 'Vue.js 2',
+          logo: 'http://fountainjs.io/assets/imgs/vue.png',
+          text1: 'Reactive Components for Modern Web Interfaces',
+          text2: 'Write some HTML, grab some JSON, create a Vue instance, that\'s it.',
+        },
+      ],
     };
-  }
+  },
 });
 </script>
 

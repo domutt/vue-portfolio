@@ -6,8 +6,8 @@ import Vue from 'vue';
 export default Vue.extend({
   name: 'Blank',
   props: {
-    msg: String
-  }
+    msg: String,
+  },
 });
 </script>
 <style lang="scss">

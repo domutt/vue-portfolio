@@ -55,7 +55,6 @@
     </div>
   </div>
 </template>
-
 <style scoped lang="scss">
 $darkest-color: black;
 $dark-color: #0A0624;
@@ -63,6 +62,7 @@ $bright-color: #FAF800;
 $light-color: #AAA9B7;
 $lightest-color: white;
 $light-transparency: rgba(255,255,255, .2);
+
 .about{
   text-align: center;
   margin-top: 120px;
@@ -111,14 +111,10 @@ $light-transparency: rgba(255,255,255, .2);
 }
 .talent{
   h3{
-    // text-decoration: underline;
-    // width: auto;
-    // border: 1px solid #000;
     font-weight: 600;
     margin-bottom: 1rem;
     margin-top: 3rem;
     span{
-      // margin-bottom: -9rem;
       background-color: $lightest-color;
       padding: .5rem 1rem 2rem 1rem;
     }
@@ -129,11 +125,8 @@ $light-transparency: rgba(255,255,255, .2);
 
       background-color: $lightest-color;
     }
-    // text-decoration: none;
-
   }
 }
-
 #connect{
   margin-top: 2rem;
   margin-bottom: 3rem;
@@ -143,28 +136,18 @@ $light-transparency: rgba(255,255,255, .2);
   font-size: 1.1rem;
   color: $bright-color;
   margin: 0 2rem;
-  // margin-bottom: 10rem;
 }
 .get-at-me {
   margin-top: 30px;
   margin-bottom: 1.3rem;
-
-
   a {
     text-decoration: none;
     font-weight: 400;
     color: $darkest-color;
-    // transition: all .3s;
     &:hover{
-      // transition: all .3s;
       color: $bright-color;
       border-bottom: 2px solid $bright-color;
-      // text-decoration: line-through;
-      // color:white;
-      // background-color: rgba(255,255,255, .2);
     }
   }
-
 }
-
 </style>

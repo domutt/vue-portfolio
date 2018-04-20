@@ -25,6 +25,6 @@ export default new Router({
       path: '/work',
       name: 'work',
       component: Work,
-    }
-  ]
+    },
+  ],
 });

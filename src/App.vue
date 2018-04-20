@@ -19,9 +19,8 @@
 
   </div>
 </template>
-
 <style lang="scss">
-
+// @import './styles/variables.scss';
 $darkest-color: black;
 $dark-color: #0A0624;
 $bright-color: #FAF800;
@@ -75,6 +74,7 @@ $font-dir: "./assets/fonts/";
   font-weight: 900;
   font-style: normal;
 }
+
 
 body {
   width: 100%;

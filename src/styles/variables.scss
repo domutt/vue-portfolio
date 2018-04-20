@@ -1,0 +1,53 @@
+$darkest-color: black;
+$dark-color: #0A0624;
+$bright-color: #FAF800;
+$light-color: #AAA9B7;
+$lightest-color: white;
+$light-transparency: rgba(255,255,255, .2);
+
+$font-dir: "../assets/fonts/";
+
+@font-face {
+  font-family: "Monique";
+  src: url("#{$font-dir}Monique-RegularRound20.woff2") format("woff2"),
+	url("#{$font-dir}Monique-RegularRound20.woff") format("woff"),
+	url("#{$font-dir}Monique-RegularRound20.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("#{$font-dir}WorkSans-Thin.woff2") format("woff2"),
+	url("#{$font-dir}WorkSans-Thin.woff") format("woff"),
+	url("#{$font-dir}WorkSans-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("#{$font-dir}WorkSans-Regular.woff2") format("woff2"),
+  url("#{$font-dir}WorkSans-Regular.woff") format("woff"),
+  url("#{$font-dir}WorkSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("#{$font-dir}WorkSans-Medium.woff2") format("woff2"),
+	url("#{$font-dir}WorkSans-Medium.woff") format("woff"),
+	url("#{$font-dir}WorkSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("#{$font-dir}WorkSans-Black.woff2") format("woff2"),
+	url("#{$font-dir}WorkSans-Black.woff") format("woff"),
+	url("#{$font-dir}WorkSans-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
